@@ -1,6 +1,6 @@
 HOW TO SETUP YOUR HOST
 
-- install drush: https://www.drupal.org/node/2366283
-  (Basic reference for drush: https://www.digitalocean.com/community/tutorials/a-beginner-s-guide-to-drush-the-drupal-shell)
-  
+[x] install drush: https://www.drupal.org/node/2366283
+      (Basic reference for drush: https://www.digitalocean.com/community/tutorials/a-beginner-s-guide-to-drush-the-drupal-shell)
+[ ] familiarize with GIT/DRUPAL workflow: https://www.drupal.org/node/803746  
   
