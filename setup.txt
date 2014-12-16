@@ -3,4 +3,8 @@ HOW TO SETUP YOUR HOST
 [x] install drush: https://www.drupal.org/node/2366283
       (Basic reference for drush: https://www.digitalocean.com/community/tutorials/a-beginner-s-guide-to-drush-the-drupal-shell)
 [ ] familiarize with GIT/DRUPAL workflow: https://www.drupal.org/node/803746  
+[ ] Easy setup for drupal sites:
+      drush dl drupal --drupal-project-rename=example
+      cd example
+      drush site-install standard --db-url='mysql://[db_user]:[db_pass]@localhost/[db_name]' --site-name=Example
   
