@@ -1,0 +1,19 @@
+HOW TO SETUP YOUR HOST
+
+[x] install drush: https://www.drupal.org/node/2366283
+      (Basic reference for drush: https://www.digitalocean.com/community/tutorials/a-beginner-s-guide-to-drush-the-drupal-shell)
+[ ] familiarize with GIT/DRUPAL workflow: https://www.drupal.org/node/803746  
+[ ] Easy setup for drupal sites:
+      drush dl drupal --drupal-project-rename=example
+      cd example
+      drush site-install standard --db-url='mysql://[db_user]:[db_pass]@localhost/[db_name]' --site-name=Example
+[ ] Drupal-git workflow:
+      http://www.jenlampton.com/blog/keeping-your-drupal-site-date-git-and-drush
+    drush ups #Check currently applied patches. 
+    git rm -r sites/all/modules/contrib/token # Delete the current version of the module.
+    drush dl token # Download the new version of the module.
+    git add sites/all/modules/contrib/token # Add the new version of the module.
+    git commit -m "security update for token module" # Commit the update.
+    drush updb # Run the database update script.
+    
+     https://www.acquia.com/blog/drupal-dev-workflow-everyone-git-flow-or-just-your-flow
