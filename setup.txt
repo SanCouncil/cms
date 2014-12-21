@@ -1,4 +1,4 @@
-HOW TO SETUP YOUR HOST
+HOW TO SETUP YOUR DEVELOPMENT ENVIRONMENT
 
 [x] install drush: https://www.drupal.org/node/2366283
       (Basic reference for drush: https://www.digitalocean.com/community/tutorials/a-beginner-s-guide-to-drush-the-drupal-shell)
@@ -17,3 +17,15 @@ HOW TO SETUP YOUR HOST
     drush updb # Run the database update script.
     
      https://www.acquia.com/blog/drupal-dev-workflow-everyone-git-flow-or-just-your-flow
+
+[ ] rsync [user]@[host]: drupal7.db  # This assumes a cron-job is in place to keep drupal7.db up-to-date
+[ ] mysql drupal7 -u root -proot < ./drupal7.db  # This assumes you are using the default VDD environment
+[ ] rsync [user]@[host]: ~/www/prod/drupal7/sites/default/files/* ./drupal7/sites/default/files # Take data added on the production server and make it available in development enviroments
+
+     
+----------------------
+
+HOW TO SETUP YOUR PRODUCTION ENVIRONMENT
+
+[ ] mysqldump --defaults-file=~/.my.cnf -u [user] [db] > ~/drupal7.db  # This is called on the production server
+
