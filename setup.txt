@@ -27,5 +27,5 @@ HOW TO SETUP YOUR DEVELOPMENT ENVIRONMENT
 
 HOW TO SETUP YOUR PRODUCTION ENVIRONMENT
 
-[ ] mysqldump --defaults-file=~/.my.cnf -u [user] [db] > ~/drupal7.db  # This is called on the production server
+[ ] mysqldump --defaults-file=~/.my.cnf -u [user] [db] > ~/drupal7.db  # This is called as a cron-job on the production server
 
