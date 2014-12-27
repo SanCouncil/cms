@@ -30,3 +30,4 @@ HOW TO SETUP YOUR PRODUCTION ENVIRONMENT
 [ ] mysqldump --defaults-file=~/.my.cnf -u [user] [db] > ~/drupal7.db  # This is called as a cron-job on the production server
 [ ] drush updb # Call this when a new pull from git is performed (otherwise modules may not appear, etc.)
 
+
