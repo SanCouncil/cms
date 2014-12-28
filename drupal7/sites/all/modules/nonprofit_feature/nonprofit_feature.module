@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Nonprofit Feature feature.
+ */
+
+include_once 'nonprofit_feature.features.inc';
