@@ -1,6 +1,0 @@
-name = Photo Gallery
-description = Feature for creating new photo galleries
-core = 7.x
-package = Features
-dependencies[] = bulk_media_upload
-features[features_api][] = api:2
