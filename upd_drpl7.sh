@@ -1,6 +1,6 @@
 #!/bin/bash
 # Automatically syncs drupal7 production environment with your dev env
-set -x
+# set -x
 
 ROOT=~/sites/drupal7
 SRC='~/www/prod/drupal7'
