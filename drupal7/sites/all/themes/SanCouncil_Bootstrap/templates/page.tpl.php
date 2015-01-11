@@ -214,11 +214,11 @@
     </div>
     <div class="col-md-5 social-media">
       <a href="https://www.linkedin.com/company/the-san-antonio-christian-dental-clinic?trk=biz-companies-cym"
-          target="_blank"><img class="social-media" src="/drupal7/sites/default/files/soc_med/linkedin-64.png" alt="LinkedIn"></a>
-      <a href="https://www.facebook.com/pages/San-Antonio-Christian-Dental-Clinic/308745854960" target="_blank"> <img class="social-media" src="/drupal7/sites/default/files/soc_med/facebook-64.png" alt="Facebook"></a>
-      <a href="https://twitter.com/SanAntonioCDC" target="_blank"><img class="social-media" src="/drupal7/sites/default/files/soc_med/twitter-64.png" alt="Twitter"></a>
-      <a href="http://instagram.com/sachristiandental" target="_blank"><img class="social-media" src="/drupal7/sites/default/files/soc_med/instagram-64.png" alt="Instagram"></a>
-      <a href="http://www.pinterest.com/sacdc1/" target="_blank"><img class="social-media" src="/drupal7/sites/default/files/soc_med/pinterest-64.png" alt="Pinterest"></a>
+          target="_blank"><img class="social-media" src="sites/default/files/soc_med/linkedin-64.png" alt="LinkedIn"></a>
+      <a href="https://www.facebook.com/pages/San-Antonio-Christian-Dental-Clinic/308745854960" target="_blank"> <img class="social-media" src="sites/default/files/soc_med/facebook-64.png" alt="Facebook"></a>
+      <a href="https://twitter.com/SanAntonioCDC" target="_blank"><img class="social-media" src="sites/default/files/soc_med/twitter-64.png" alt="Twitter"></a>
+      <a href="http://instagram.com/sachristiandental" target="_blank"><img class="social-media" src="sites/default/files/soc_med/instagram-64.png" alt="Instagram"></a>
+      <a href="http://www.pinterest.com/sacdc1/" target="_blank"><img class="social-media" src="sites/default/files/soc_med/pinterest-64.png" alt="Pinterest"></a>
     </div>
   </div> <!-- row -->
 </div>
