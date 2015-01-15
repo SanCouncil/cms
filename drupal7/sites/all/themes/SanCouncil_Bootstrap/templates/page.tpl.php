@@ -209,9 +209,12 @@
       </h5>
     </div>
 
-    <div class="col-md-4 ctr">
-      <h1>Twitter Feed</h1>
-    </div>
+    <?php if (!empty($page['footer'])): ?>
+      <div class="col-md-4 ctr">
+    <?php print render($page['footer']); ?>
+      </div>  <!-- /#footer -->
+    <?php endif; ?>
+
     <div class="col-md-5 social-media">
       <a href="https://www.linkedin.com/company/the-san-antonio-christian-dental-clinic?trk=biz-companies-cym"
           target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/linkedin-64.png" alt="LinkedIn"></a>
