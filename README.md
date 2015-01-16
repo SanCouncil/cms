@@ -10,3 +10,4 @@ Released version 0.3.3
 Released version 0.4.3
 Hotfix version 0.4.4
 Released version 0.5.4
+Released version 0.6.4
