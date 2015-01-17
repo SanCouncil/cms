@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Video Media feature.
+ */
+
+include_once 'video_media.features.inc';
