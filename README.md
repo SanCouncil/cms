@@ -12,3 +12,4 @@ Hotfix version 0.4.4
 Released version 0.5.4
 Released version 0.6.4
 Hotfix version 0.6.5
+Hotfix version 0.6.6
