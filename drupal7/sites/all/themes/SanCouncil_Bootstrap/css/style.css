@@ -3,24 +3,45 @@
 */
 
 body {
-  background-color: rgba(4, 67, 6, 0.45);
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #000000;
+}
+
+body a:link {
+  color: #000000;
+}
+
+body a:hover {
+  color: #ed0345;
 }
 
 .main-container {
   background-color: rgba(255, 255, 255, 1.0);
+  border: solid;
+  border-width: 1px;
   border-radius: 5px;
   padding: 30px;
 }
 
 .navbar {
   margin-bottom: 0;
-  border: none;
-  background-color: #fbc371;
+  border: solid;
+  border-width: 1px;
+  background-color: rgb(244, 163, 46);
   border-radius: 5px;
+  font-size: 18px;
 }
 
 .navbar.container {
   margin-top: 0px;
+}
+
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000000;
 }
 
 .ctr {
@@ -57,8 +78,18 @@ img.social-media {
 
 .footer {
   margin-top: 0px;
+  border: solid;
+  border-width: 1px;
   border-radius: 5px;
-  background-color: rgba(26, 135, 48, 0.95);
+  background-color: rgb(9, 113, 104);
+  color: #000000;
+  font-weight: 500;
+}
+
+.twitter {
+
+.footer a:link {
+  color: #ffffff;
 }
 
 .pics {
