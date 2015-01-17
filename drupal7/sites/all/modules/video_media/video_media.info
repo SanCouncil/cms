@@ -1,0 +1,15 @@
+name = Video Media
+description = Allows upload of videos and youtube/vimeo links in "Article" content
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = file
+dependencies[] = media
+dependencies[] = views
+dependencies[] = views_bootstrap
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = field_video
+features[field_instance][] = node-article-field_video
+features[views_view][] = recent_videos
+features_exclude[dependencies][ctools] = ctools
