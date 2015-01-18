@@ -109,6 +109,7 @@
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
+      <img class="img-responsive skyline" align="right" src="<?php print $base_path ?>sites/default/files/logos/san_skyline.png" alt="San Antonio Skyline">
       </div>
     <?php endif; ?>
 
@@ -119,6 +120,8 @@
 
     <?php print render($page['header']); ?>
     </header> <!-- /#page-header -->
+
+
 
 </div>
 

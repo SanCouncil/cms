@@ -44,6 +44,11 @@ body a:hover {
   color: #000000;
 }
 
+.skyline {
+  max-height: 100px;
+  padding-top: 20px;
+}
+
 .ctr {
   text-align: center;
   border: none;
