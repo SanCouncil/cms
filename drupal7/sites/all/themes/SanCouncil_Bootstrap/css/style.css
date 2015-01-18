@@ -88,6 +88,7 @@ img.social-media {
   border-radius: 5px;
   background-color: rgb(9, 113, 104);
   color: #000000;
+  padding-bottom: 15px;
 }
 
 .footer a:link {
@@ -105,6 +106,10 @@ img.social-media {
 
 .tweety-feed {
   text-align: center;
+}
+
+.websiteby {
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {

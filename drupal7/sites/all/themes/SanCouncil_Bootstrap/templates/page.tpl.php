@@ -228,6 +228,11 @@
       <a href="http://www.guidestar.org/organizations/03-0485670/san-antonio-non-profit-council.aspx" target="_blank"><img src="<?php print $base_path ?>sites/default/files/logos/guidestar.png" alt="guidestar" width="130"></a>
     </div>
   </div> <!-- row -->
+  <div class="row websiteby">
+    <div class="col-md-4 col-md-offset-4 ctr">
+      <h6>Web Design by La Boheme Web Consulting</h6>
+    </div>
+  </div>
 </div>
 
 
