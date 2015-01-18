@@ -211,7 +211,7 @@
     </div>
 
     <?php if (!empty($page['footer'])): ?>
-      <div class="col-md-2 col-md-offset-1 tweety">
+      <div class="col-md-1 tweety">
         <a href="https://twitter.com/SANCouncil" target="_blank"><img src="<?php print $base_path ?>sites/default/files/soc_med/tweety.gif" alt="Tweety" width="90"></a>
       </div>
       <div class="col-md-6 tweety-feed">
@@ -220,6 +220,10 @@
       </h5>
       </div>  <!-- /#footer -->
     <?php endif; ?>
+
+    <div class="col-md-1 ctr">
+      <a href="http://www.guidestar.org/organizations/03-0485670/san-antonio-non-profit-council.aspx" target="_blank"><img src="<?php print $base_path ?>sites/default/files/logos/guidestar.png" alt="guidestar" width="130"></a>
+    </div>
   </div> <!-- row -->
 </div>
 
