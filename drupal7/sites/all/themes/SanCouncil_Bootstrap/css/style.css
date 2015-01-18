@@ -83,7 +83,6 @@ img.social-media {
   border-radius: 5px;
   background-color: rgb(9, 113, 104);
   color: #000000;
-  font-weight: 500;
 }
 
 .footer a:link {
@@ -94,17 +93,36 @@ img.social-media {
   max-width: 250px;
 }
 
+.tweety {
+  text-align: center;
+  padding: 5px 0px 0px 0px;
+}
+
+.tweety-feed {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   
   .navbar.container {
     max-width: 750px;
   }
+
 }
 
 @media (min-width: 992px) {
   
   .navbar.container {
     max-width: 970px;
+  }
+  
+  .tweety {
+    text-align: right;
+    padding: 5px 0px 0px 0px;
+  }
+  
+  .tweety-feed {
+    text-align: left;
   }
 }
 
