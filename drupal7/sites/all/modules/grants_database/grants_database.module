@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Grants Database feature.
+ */
+
+include_once 'grants_database.features.inc';
