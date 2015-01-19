@@ -99,9 +99,14 @@ img.social-media {
   max-width: 250px;
 }
 
+.org {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .tweety {
   text-align: center;
-  padding: 5px 0px 0px 0px;
+  padding-top: 5px 0px 0px 0px;
 }
 
 .tweety-feed {
@@ -124,6 +129,10 @@ img.social-media {
   
   .navbar.container {
     max-width: 970px;
+  }
+  
+  .org {
+    text-align: left;
   }
   
   .tweety {
