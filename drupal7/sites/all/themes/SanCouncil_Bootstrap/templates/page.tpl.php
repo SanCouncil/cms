@@ -109,6 +109,7 @@
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
+      <img class="img-responsive skyline" align="right" src="<?php print $base_path ?>sites/default/files/logos/san_skyline.png" alt="San Antonio Skyline">
       </div>
     <?php endif; ?>
 
@@ -120,37 +121,43 @@
     <?php print render($page['header']); ?>
     </header> <!-- /#page-header -->
 
+
+
 </div>
 
 
 <div class="main-container container">
 
-<div class="row">
-<section<?php print $content_column_class; ?>>
-<?php if (!empty($page['highlighted'])): ?>
-<div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-<?php endif; ?>
-<?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-<a id="main-content"></a>
-<?php print render($title_prefix); ?>
-<?php if (!empty($title)): ?>
-<h1 class="page-header ctr"><?php print $title; ?></h1>
-<?php endif; ?>
-<?php print render($title_suffix); ?>
-<?php print $messages; ?>
-<?php if (!empty($tabs)): ?>
-<?php print render($tabs); ?>
-<?php endif; ?>
-<?php if (!empty($page['help'])): ?>
-<?php print render($page['help']); ?>
-<?php endif; ?>
-<?php if (!empty($action_links)): ?>
-<ul class="action-links"><?php print render($action_links); ?></ul>
-<?php endif; ?>
-<?php print render($page['content']); ?>
-</section>
-</div>
-<div class="row">
+  <a href="https://www.facebook.com/BigGiveSA" target="_blank"> <img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/facebook-64.png" alt="Facebook"></a>
+  <a href="https://twitter.com/SANCouncil" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/twitter-64.png" alt="Twitter"></a>
+  <a href="https://vimeo.com/user33166448" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/vimeo-64.png" alt="Vimeo"></a>
+
+  <div class="row">
+    <section<?php print $content_column_class; ?>>
+      <?php if (!empty($page['highlighted'])): ?>
+        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+      <?php endif; ?>
+      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+        <a id="main-content"></a>
+      <?php print render($title_prefix); ?>
+      <?php if (!empty($title)): ?>
+        <h1 class="page-header ctr"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+      <?php print $messages; ?>
+      <?php if (!empty($tabs)): ?>
+      <?php print render($tabs); ?>
+      <?php endif; ?>
+      <?php if (!empty($page['help'])): ?>
+      <?php print render($page['help']); ?>
+      <?php endif; ?>
+      <?php if (!empty($action_links)): ?>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
+      <?php print render($page['content']); ?>
+    </section>
+  </div>
+  <div class="row">
 
     <?php if (!empty($page['body1'])): ?>
       <div class="col-md-4 ctr">
@@ -169,8 +176,6 @@
     <?php print render($page['body3']); ?>
       <br><br><br></div>  <!-- /#body3 -->
     <?php endif; ?>
-
-
 
   </div>
   <div class="row">
@@ -194,9 +199,8 @@
     <?php endif; ?>
 
   </div>
-</div>
+</div> <!-- /main container -->
 
-</div>
 <div class="footer container">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -210,20 +214,25 @@
     </div>
 
     <?php if (!empty($page['footer'])): ?>
-      <div class="col-md-4 ctr">
+      <div class="col-md-1 tweety">
+        <a href="https://twitter.com/SANCouncil" target="_blank"><img src="<?php print $base_path ?>sites/default/files/soc_med/tweety.gif" alt="Tweety" width="90"></a>
+      </div>
+      <div class="col-md-6 tweety-feed">
+      <h5>
     <?php print render($page['footer']); ?>
+      </h5>
       </div>  <!-- /#footer -->
     <?php endif; ?>
 
-    <div class="col-md-5 social-media">
-      <a href="https://www.linkedin.com/company/the-san-antonio-christian-dental-clinic?trk=biz-companies-cym"
-          target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/linkedin-64.png" alt="LinkedIn"></a>
-      <a href="https://www.facebook.com/pages/San-Antonio-Christian-Dental-Clinic/308745854960" target="_blank"> <img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/facebook-64.png" alt="Facebook"></a>
-      <a href="https://twitter.com/SanAntonioCDC" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/twitter-64.png" alt="Twitter"></a>
-      <a href="http://instagram.com/sachristiandental" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/instagram-64.png" alt="Instagram"></a>
-      <a href="http://www.pinterest.com/sacdc1/" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/pinterest-64.png" alt="Pinterest"></a>
+    <div class="col-md-1 ctr">
+      <a href="http://www.guidestar.org/organizations/03-0485670/san-antonio-non-profit-council.aspx" target="_blank"><img src="<?php print $base_path ?>sites/default/files/logos/guidestar.png" alt="guidestar" width="130"></a>
     </div>
   </div> <!-- row -->
+  <div class="row websiteby">
+    <div class="col-md-4 col-md-offset-4 ctr">
+      <h6>Web Design by La Boheme Web Consulting</h6>
+    </div>
+  </div>
 </div>
 
 

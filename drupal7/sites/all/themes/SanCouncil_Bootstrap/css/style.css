@@ -3,24 +3,50 @@
 */
 
 body {
-  background-color: rgba(4, 67, 6, 0.45);
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #000000;
+}
+
+body a:link {
+  color: #000000;
+}
+
+body a:hover {
+  color: #ed0345;
 }
 
 .main-container {
   background-color: rgba(255, 255, 255, 1.0);
+  border: solid;
+  border-width: 1px;
   border-radius: 5px;
   padding: 30px;
 }
 
 .navbar {
   margin-bottom: 0;
-  border: none;
-  background-color: #fbc371;
+  border: solid;
+  border-width: 1px;
+  background-color: rgb(244, 163, 46);
   border-radius: 5px;
+  font-size: 18px;
 }
 
 .navbar.container {
   margin-top: 0px;
+}
+
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000000;
+}
+
+.skyline {
+  max-height: 100px;
+  padding-top: 20px;
 }
 
 .ctr {
@@ -46,9 +72,9 @@ body {
 }
 
 img.social-media {
-  margin: 10px 10px 10px 10px;
-  max-width: 50px;
-  max-height: 50px;
+  margin: -35px 2px 2px 2px;
+  max-width: 40px;
+  max-height: 40px;
 }
 
 .social-media {
@@ -57,12 +83,33 @@ img.social-media {
 
 .footer {
   margin-top: 0px;
+  border: solid;
+  border-width: 1px;
   border-radius: 5px;
-  background-color: rgba(26, 135, 48, 0.95);
+  background-color: rgb(9, 113, 104);
+  color: #000000;
+  padding-bottom: 15px;
+}
+
+.footer a:link {
+  color: #ffffff;
 }
 
 .pics {
   max-width: 250px;
+}
+
+.tweety {
+  text-align: center;
+  padding: 5px 0px 0px 0px;
+}
+
+.tweety-feed {
+  text-align: center;
+}
+
+.websiteby {
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -70,12 +117,22 @@ img.social-media {
   .navbar.container {
     max-width: 750px;
   }
+
 }
 
 @media (min-width: 992px) {
   
   .navbar.container {
     max-width: 970px;
+  }
+  
+  .tweety {
+    text-align: right;
+    padding: 5px 0px 0px 0px;
+  }
+  
+  .tweety-feed {
+    text-align: left;
   }
 }
 

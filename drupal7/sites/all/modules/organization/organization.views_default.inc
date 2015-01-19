@@ -31,21 +31,21 @@ function organization_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['grouping'] = array(
-    0 => array(
-      'field' => 'title',
-      'rendered' => 1,
-      'rendered_strip' => 0,
-    ),
-  );
   $handler->display->display_options['style_options']['columns'] = array(
+    'field_icon' => 'field_icon',
     'title' => 'title',
     'body' => 'body',
-    'field_icon' => 'field_icon',
     'field_website' => 'field_website',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
+    'field_icon' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
     'title' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
@@ -54,13 +54,6 @@ function organization_views_default_views() {
       'empty_column' => 0,
     ),
     'body' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_icon' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -109,11 +102,10 @@ function organization_views_default_views() {
     'trim_length' => '80',
     'nofollow' => 0,
   );
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -132,6 +124,37 @@ function organization_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'organizations';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_carousel_plugin_style';
+  $handler->display->display_options['style_options']['interval'] = '5000';
+  $handler->display->display_options['style_options']['navigation'] = 0;
+  $handler->display->display_options['style_options']['indicators'] = 0;
+  $handler->display->display_options['style_options']['pause'] = 1;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Logo */
+  $handler->display->display_options['fields']['field_icon']['id'] = 'field_icon';
+  $handler->display->display_options['fields']['field_icon']['table'] = 'field_data_field_icon';
+  $handler->display->display_options['fields']['field_icon']['field'] = 'field_icon';
+  $handler->display->display_options['fields']['field_icon']['label'] = '';
+  $handler->display->display_options['fields']['field_icon']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_icon']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_icon']['settings'] = array(
+    'image_style' => 'medium',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $export['organizations'] = $view;
 
   return $export;
