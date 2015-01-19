@@ -127,11 +127,6 @@
 
 
 <div class="main-container container">
-
-  <a href="https://www.facebook.com/BigGiveSA" target="_blank"> <img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/facebook-64.png" alt="Facebook"></a>
-  <a href="https://twitter.com/SANCouncil" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/twitter-64.png" alt="Twitter"></a>
-  <a href="https://vimeo.com/user33166448" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/vimeo-64.png" alt="Vimeo"></a>
-
   <div class="row">
     <section<?php print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>
@@ -202,6 +197,13 @@
 </div> <!-- /main container -->
 
 <div class="footer container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 social-media">
+      <a href="https://www.facebook.com/pages/San-Antonio-Nonprofit-Council/235546073271257" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/facebook-64.png" alt="Facebook"></a>
+      <a href="https://twitter.com/SANCouncil" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/twitter-64.png" alt="Twitter"></a>
+      <a href="https://vimeo.com/user33166448" target="_blank"><img class="social-media" src="<?php print $base_path ?>sites/default/files/soc_med/vimeo-64.png" alt="Vimeo"></a>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-3 text-center">
       <h5>
