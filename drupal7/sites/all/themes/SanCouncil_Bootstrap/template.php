@@ -7,4 +7,34 @@
       }
     }
   }
-  ?>
+
+/**
+ * Custom Registration Form tpl
+ **/
+function SanCouncil_Bootstrap_theme(&$existing, $type, $theme, $path){
+  $hooks = array();
+  // Make user-register.tpl.php available
+  $hooks['user_register_form'] = array (
+    'render element' => 'form',
+    'path' => drupal_get_path('theme','SanCouncil_Bootstrap'),
+    'template' => 'user-register',
+    'preprocess functions' => 
+    array('SanCouncil_Bootstrap_preprocess_user_register_form'),
+    );
+  return $hooks;
+}
+
+/**
+ * Processing user registration
+ **/
+function SanCouncil_Bootstrap_preprocess_user_register_form(&$vars) 
+{
+  $args = func_get_args();
+  array_shift($args);
+  $form_state['build_info']['args'] = 
+    $args; 
+  $vars['form'] = 
+    drupal_build_form('user_register_form', 
+    $form_state['build_info']['args']);
+}
+?>
