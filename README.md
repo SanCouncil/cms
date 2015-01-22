@@ -16,3 +16,4 @@ Hotfix version 0.6.6
 Released version 0.7.6
 Released version 0.8.6
 Released version 0.9.6
+Released version 0.10.6
