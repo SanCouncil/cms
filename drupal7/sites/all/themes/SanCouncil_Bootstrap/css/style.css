@@ -70,6 +70,15 @@ body a:hover {
   height: 100%;
 }
 
+.search_form {
+  padding-right: 30%;
+  padding-left: 30%;
+}
+
+.search_form_label {
+  text-align: left;
+}
+
 img.social-media {
   margin: -25px 4px 10px 4px;
   max-width: 40px;
@@ -132,6 +141,11 @@ img.social-media {
   
   .org {
     text-align: left;
+  }
+  
+  .search_form {
+    padding-right: 15px;
+    padding-left: 15px;
   }
   
   .tweety {

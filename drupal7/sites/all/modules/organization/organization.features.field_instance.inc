@@ -67,7 +67,7 @@ function organization_field_default_field_instances() {
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'What county does organization operate in?  May list up to 10.',
+    'description' => 'What county/counties does organization operate in?',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -99,7 +99,7 @@ function organization_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
+      'type' => 'options_buttons',
       'weight' => 4,
     ),
   );
@@ -364,7 +364,7 @@ function organization_field_default_field_instances() {
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'May select two.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -396,7 +396,7 @@ function organization_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
+      'type' => 'options_buttons',
       'weight' => 3,
     ),
   );
@@ -511,13 +511,12 @@ function organization_field_default_field_instances() {
   t('Featured Organization?');
   t('Link to organization\'s donation page.');
   t('Logo');
-  t('May select two.');
   t('Nonprofit Type');
   t('Partnership');
   t('Site');
   t('This field is for description of partnership between organization and SanCouncil.');
   t('Type');
-  t('What county does organization operate in?  May list up to 10.');
+  t('What county/counties does organization operate in?');
 
   return $field_instances;
 }
