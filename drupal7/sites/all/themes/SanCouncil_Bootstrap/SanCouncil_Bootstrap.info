@@ -20,7 +20,6 @@ regions[body6]          = 'Body Region 6'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
-regions[oauthconn_reg]  = 'Oauth Connectors'
 
 
 ;;;;;;;;;;;;;;;;;;;;;
