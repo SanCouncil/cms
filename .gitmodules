@@ -1,3 +1,0 @@
-[submodule "drupal7/sites/all/libraries/hybridauth"]
-	path = drupal7/sites/all/libraries/hybridauth
-	url = git@github.com:hybridauth/hybridauth.git
