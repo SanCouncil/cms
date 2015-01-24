@@ -58,7 +58,7 @@ function organization_views_default_views() {
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_plain';
-  /* Field: Content: Site */
+  /* Field: Content: Website */
   $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
   $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
   $handler->display->display_options['fields']['field_website']['field'] = 'field_website';
@@ -128,7 +128,7 @@ function organization_views_default_views() {
   $handler->display->display_options['fields']['body']['element_class'] = 'col-md-4 org';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_plain';
-  /* Field: Content: Site */
+  /* Field: Content: Website */
   $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
   $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
   $handler->display->display_options['fields']['field_website']['field'] = 'field_website';
@@ -305,6 +305,12 @@ function organization_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<a href="../node/add/organization/" class="btn btn-primary" role="button">Add New Organization</a>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -390,7 +396,7 @@ function organization_views_default_views() {
   $handler->display->display_options['fields']['body']['element_class'] = 'col-md-4 org';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_plain';
-  /* Field: Content: Site */
+  /* Field: Content: Website */
   $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
   $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
   $handler->display->display_options['fields']['field_website']['field'] = 'field_website';
@@ -567,7 +573,7 @@ function organization_views_default_views() {
   $handler->display->display_options['fields']['field_partnership']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_partnership']['element_class'] = 'col-md-4';
   $handler->display->display_options['fields']['field_partnership']['element_label_colon'] = FALSE;
-  /* Field: Content: Site */
+  /* Field: Content: Website */
   $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
   $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
   $handler->display->display_options['fields']['field_website']['field'] = 'field_website';

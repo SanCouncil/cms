@@ -1,0 +1,3 @@
+name = Organization Form
+description = A module to add a custom form for content-type "organization"
+core = 7.x

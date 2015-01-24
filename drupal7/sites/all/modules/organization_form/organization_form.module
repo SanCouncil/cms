@@ -1,0 +1,10 @@
+<?php
+
+function organization_form_theme() {
+  return array(
+    'organization_node_form' => array(
+      'template' => 'organization_node_form',
+        'render element' => 'form',
+    ),
+  );
+}
