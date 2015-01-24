@@ -140,7 +140,7 @@ function organization_field_default_field_bases() {
     'locked' => 0,
     'module' => 'image',
     'settings' => array(
-      'default_image' => 11,
+      'default_image' => 36,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
