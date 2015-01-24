@@ -15,7 +15,7 @@ function organization_field_default_field_instances() {
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Description of organization.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -44,7 +44,7 @@ function organization_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'body',
     'label' => 'Description',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'display_summary' => 0,
       'text_processing' => 0,
@@ -67,7 +67,7 @@ function organization_field_default_field_instances() {
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'What county/counties does organization operate in?',
+    'description' => 'What county/counties does organization operate in?  May select multiple.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -109,7 +109,7 @@ function organization_field_default_field_instances() {
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Link to organization\'s donation page.',
+    'description' => 'Website link directly to organization\'s donation page.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -167,7 +167,7 @@ function organization_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => 'Checking this box will make it a "featured" organization.',
+    'description' => 'Checking this box will make it a "featured" organization.  Featured organizations are promoted to front page content, i.e. the rotating carousels on the front page.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -210,7 +210,7 @@ function organization_field_default_field_instances() {
   $field_instances['node-organization-field_icon'] = array(
     'bundle' => 'organization',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Upload the organization\'s logo here.  A quality logo of approximately 250 x 250 pixels is preferred.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -271,7 +271,7 @@ function organization_field_default_field_instances() {
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Contact email address for organization.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -317,7 +317,7 @@ function organization_field_default_field_instances() {
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'This field is for description of partnership between organization and SanCouncil.',
+    'description' => '(Optional) Field describes special partnership between organization and SanCouncil.  If filled out, organization will be displayed in "partnership" view.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -344,7 +344,7 @@ function organization_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -364,7 +364,7 @@ function organization_field_default_field_instances() {
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Type of nonprofit organization.  May select multiple if applicable.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -452,7 +452,7 @@ function organization_field_default_field_instances() {
     'bundle' => 'organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Website address of organization.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -483,7 +483,7 @@ function organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_website',
-    'label' => 'Site',
+    'label' => 'Website',
     'required' => 0,
     'settings' => array(
       'title_fetch' => 0,
@@ -503,20 +503,25 @@ function organization_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Checking this box will make it a "featured" organization.');
+  t('(Optional) Field describes special partnership between organization and SanCouncil.  If filled out, organization will be displayed in "partnership" view.');
+  t('Checking this box will make it a "featured" organization.  Featured organizations are promoted to front page content, i.e. the rotating carousels on the front page.');
   t('Contact Email');
+  t('Contact email address for organization.');
   t('County');
   t('Description');
+  t('Description of organization.');
   t('Donate Link');
   t('Featured Organization?');
-  t('Link to organization\'s donation page.');
   t('Logo');
   t('Nonprofit Type');
   t('Partnership');
-  t('Site');
-  t('This field is for description of partnership between organization and SanCouncil.');
   t('Type');
-  t('What county/counties does organization operate in?');
+  t('Type of nonprofit organization.  May select multiple if applicable.');
+  t('Upload the organization\'s logo here.  A quality logo of approximately 250 x 250 pixels is preferred.');
+  t('Website');
+  t('Website address of organization.');
+  t('Website link directly to organization\'s donation page.');
+  t('What county/counties does organization operate in?  May select multiple.');
 
   return $field_instances;
 }
