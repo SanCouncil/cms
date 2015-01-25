@@ -54,6 +54,16 @@ body a:hover {
   border: none;
 }
 
+.block_body {
+  padding-bottom: 50px;
+}
+
+img.ctr {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 20px;
+}
+
 .responsive-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -155,6 +165,14 @@ img.social-media {
   
   .tweety-feed {
     text-align: left;
+  }
+  
+  img.ctr {
+    padding: 30px 0px;
+  }
+  
+  .block_body {
+    padding-bottom: 100px;
   }
 }
 

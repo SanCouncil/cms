@@ -155,19 +155,19 @@
   <div class="row">
 
     <?php if (!empty($page['body1'])): ?>
-      <div class="col-md-4 ctr">
+      <div class="col-md-4 ctr block_body">
     <?php print render($page['body1']); ?>
       <br><br><br></div>  <!-- /#body1 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body2'])): ?>
-      <div class="col-md-4 ctr">
+      <div class="col-md-4 ctr block_body">
     <?php print render($page['body2']); ?>
       <br><br><br></div>  <!-- /#body2 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body3'])): ?>
-      <div class="col-md-4 ctr">
+      <div class="col-md-4 ctr block_body">
     <?php print render($page['body3']); ?>
       <br><br><br></div>  <!-- /#body3 -->
     <?php endif; ?>
@@ -176,19 +176,19 @@
   <div class="row">
 
     <?php if (!empty($page['body4'])): ?>
-      <div class="col-md-4 ctr">
+      <div class="col-md-4 ctr block_body">
     <?php print render($page['body4']); ?>
       <br><br><br></div>  <!-- /#body1 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body5'])): ?>
-      <div class="col-md-4 ctr">
+      <div class="col-md-4 ctr block_body">
     <?php print render($page['body5']); ?>
       <br><br><br></div>  <!-- /#body2 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body6'])): ?>
-      <div class="col-md-4 ctr">
+      <div class="col-md-4 ctr block_body">
     <?php print render($page['body6']); ?>
       <br><br><br></div>  <!-- /#body3 -->
     <?php endif; ?>
