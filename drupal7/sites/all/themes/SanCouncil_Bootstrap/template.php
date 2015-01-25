@@ -6,4 +6,9 @@
         $variables['items'][ $key ]['#item']['attributes']['class'][] = 'img-responsive';
       }
     }
+    if($variables['element']['#field_name'] == 'field_logo'){
+      foreach($variables['items'] as $key => $item){
+        $variables['items'][ $key ]['#item']['attributes']['class'][] = 'img-responsive';
+      }
+    }
   }

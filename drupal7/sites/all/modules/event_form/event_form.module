@@ -1,0 +1,10 @@
+<?php
+
+function event_form_theme() {
+  return array(
+    'event_node_form' => array(
+      'template' => 'event_node_form',
+        'render element' => 'form',
+    ),
+  );
+}
