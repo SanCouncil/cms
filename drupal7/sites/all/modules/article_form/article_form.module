@@ -1,0 +1,10 @@
+<?php
+
+function article_form_theme() {
+  return array(
+    'article_node_form' => array(
+      'template' => 'article_node_form',
+        'render element' => 'form',
+    ),
+  );
+}
