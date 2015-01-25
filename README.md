@@ -19,3 +19,4 @@ Released version 0.9.6
 Released version 0.10.6
 Released version 0.11.6
 Released version 0.12.6
+Released version 0.13.6
