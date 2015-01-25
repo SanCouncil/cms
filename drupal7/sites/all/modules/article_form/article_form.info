@@ -1,0 +1,3 @@
+name = Article Form
+description = A module to add a custom form for content-type "Article"
+core = 7.x
