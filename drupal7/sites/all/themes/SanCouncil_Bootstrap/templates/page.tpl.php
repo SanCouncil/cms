@@ -152,6 +152,23 @@
       <?php print render($page['content']); ?>
     </section>
   </div>
+
+  <div class="row">
+
+    <?php if (!empty($page['bodyA'])): ?>
+      <div class="col-md-8 ctr block_body">
+    <?php print render($page['bodyA']); ?>
+      <br><br><br></div>  <!-- /#bodyA -->
+    <?php endif; ?>
+
+    <?php if (!empty($page['bodyB'])): ?>
+      <div class="col-md-4 ctr block_body">
+    <?php print render($page['bodyB']); ?>
+      <br><br><br></div>  <!-- /#bodyB -->
+    <?php endif; ?>
+
+  </div>
+
   <div class="row">
 
     <?php if (!empty($page['body1'])): ?>
@@ -173,6 +190,7 @@
     <?php endif; ?>
 
   </div>
+
   <div class="row">
 
     <?php if (!empty($page['body4'])): ?>
