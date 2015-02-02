@@ -23,3 +23,4 @@ Released version 0.13.6
 Hotfix version 0.13.7
 Released version 0.14.7
 Released version 0.14.7
+Released version 0.15.7
