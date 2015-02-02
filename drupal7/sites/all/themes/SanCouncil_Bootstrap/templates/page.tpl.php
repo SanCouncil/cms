@@ -171,6 +171,22 @@
 
   <div class="row">
 
+    <?php if (!empty($page['bodyC'])): ?>
+      <div class="col-md-4 block_body">
+    <?php print render($page['bodyC']); ?>
+      <br><br><br></div>  <!-- /#bodyC -->
+    <?php endif; ?>
+
+    <?php if (!empty($page['bodyD'])): ?>
+      <div class="col-md-8 block_body">
+    <?php print render($page['bodyD']); ?>
+      <br><br><br></div>  <!-- /#bodyD -->
+    <?php endif; ?>
+
+</div>
+
+  <div class="row">
+
     <?php if (!empty($page['body1'])): ?>
       <div class="col-md-4 ctr block_body">
     <?php print render($page['body1']); ?>
