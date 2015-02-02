@@ -58,6 +58,20 @@ body a:hover {
   padding-bottom: 50px;
 }
 
+.media_embed {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.media_embed iframe {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 img.ctr {
   padding-left: 20%;
   padding-right: 20%;
