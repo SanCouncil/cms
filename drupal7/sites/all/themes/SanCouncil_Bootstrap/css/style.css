@@ -58,6 +58,10 @@ body a:hover {
   padding-bottom: 50px;
 }
 
+.block-title {
+  text-align:center;
+}
+
 .media_embed {
   height: 0;
   position: relative;
