@@ -156,13 +156,13 @@
   <div class="row">
 
     <?php if (!empty($page['bodyA'])): ?>
-      <div class="col-md-8 ctr block_body">
+      <div class="col-md-8 block_body">
     <?php print render($page['bodyA']); ?>
       <br><br><br></div>  <!-- /#bodyA -->
     <?php endif; ?>
 
     <?php if (!empty($page['bodyB'])): ?>
-      <div class="col-md-4 ctr block_body">
+      <div class="col-md-4 block_body">
     <?php print render($page['bodyB']); ?>
       <br><br><br></div>  <!-- /#bodyB -->
     <?php endif; ?>
@@ -188,19 +188,19 @@
   <div class="row">
 
     <?php if (!empty($page['body1'])): ?>
-      <div class="col-md-4 ctr block_body">
+      <div class="col-md-4 block_body">
     <?php print render($page['body1']); ?>
       <br><br><br></div>  <!-- /#body1 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body2'])): ?>
-      <div class="col-md-4 ctr block_body">
+      <div class="col-md-4 block_body">
     <?php print render($page['body2']); ?>
       <br><br><br></div>  <!-- /#body2 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body3'])): ?>
-      <div class="col-md-4 ctr block_body">
+      <div class="col-md-4 block_body">
     <?php print render($page['body3']); ?>
       <br><br><br></div>  <!-- /#body3 -->
     <?php endif; ?>
@@ -210,19 +210,19 @@
   <div class="row">
 
     <?php if (!empty($page['body4'])): ?>
-      <div class="col-md-4 ctr block_body">
+      <div class="col-md-4 block_body">
     <?php print render($page['body4']); ?>
       <br><br><br></div>  <!-- /#body1 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body5'])): ?>
-      <div class="col-md-4 ctr block_body">
+      <div class="col-md-4 block_body">
     <?php print render($page['body5']); ?>
       <br><br><br></div>  <!-- /#body2 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body6'])): ?>
-      <div class="col-md-4 ctr block_body">
+      <div class="col-md-4 block_body">
     <?php print render($page['body6']); ?>
       <br><br><br></div>  <!-- /#body3 -->
     <?php endif; ?>
@@ -239,7 +239,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-3 text-center">
+    <div class="col-md-3 ctr">
       <h5>
       1150 N. Loop 1604 W<br>
       Suite 108-511<br>
