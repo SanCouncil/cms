@@ -13,7 +13,7 @@ function event_field_default_field_bases() {
   // Exported field_base: 'field_date'
   $field_bases['field_date'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_date',
@@ -32,9 +32,10 @@ function event_field_default_field_bases() {
         'second' => 0,
         'year' => 'year',
       ),
+      'repeat' => 1,
       'timezone_db' => 'UTC',
       'todate' => 'optional',
-      'tz_handling' => 'site',
+      'tz_handling' => 'user',
     ),
     'translatable' => 0,
     'type' => 'datetime',
@@ -83,36 +84,6 @@ function event_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_logo'
-  $field_bases['field_logo'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_logo',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
   );
 
   return $field_bases;
