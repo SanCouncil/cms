@@ -12,3 +12,17 @@
       }
     }
   }
+
+/**
+ * Bootstrap theme wrapper function for the my menu links.
+ */
+function SanCouncil_Bootstrap_menu_tree(&$variables) {
+  return $variables['tree'];
+}
+
+/**
+ * Bootstrap theme wrapper function for the my menu links.
+ */
+function SanCouncil_Bootstrap_menu_tree__secondary(&$variables) {
+  return $variables['tree'];
+}
