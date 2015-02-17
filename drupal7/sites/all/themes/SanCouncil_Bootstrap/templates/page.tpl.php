@@ -73,59 +73,34 @@
  * @ingroup themeable
  */
 ?>
+<div class="nav-container container">
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-target="#nav-links" data-toggle="collapse"> <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
 
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
 
-<div id="navbar" class="<?php print $navbar_classes; ?>">
-    <div class="navbar-header">
-      <?php if ($logo): ?>
-      <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-      <?php endif; ?>
+            </button> <a title="Home" class="logo navbar-brand" href="#">
+            <img class="img-responsive" alt="SanCouncil" src="http://prod.sanantoniononprofitcouncil.org/sites/default/files/sancouncil_logo_40x40.png">
+          </a>
 
-      <?php if (!empty($site_name)): ?>
-      <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-      <?php endif; ?>
+        </div>
 
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse">
-        <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
-        </nav>
-      <img class="img-responsive skyline" align="right" src="<?php print $base_path ?>sites/default/files/logos/san_skyline.png" alt="San Antonio Skyline">
-      </div>
-    <?php endif; ?>
-
-    <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-    <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-    </header> <!-- /#page-header -->
-
-
-
-</div>
-
-
+        <div class="navbar-collapse collapse" id="nav-links">
+          <?php if(!empty($primary_nav)): print render($primary_nav); endif;?>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="divider"></li>
+            <li>
+              <img class="img-responsive visible-lg-inline visible-md-inline" alt="San Antonio Skyline" src="http://prod.sanantoniononprofitcouncil.org/sites/default/files/logos/san_skyline.png">
+            </li>
+            <?php if(empty($secondary_nav)): ?>
+            <li><a href="<?php print $base_path ?>user">Login</a></li>
+            <?php else: print render($secondary_nav); endif;?>
+          </ul>
+        </div> <!-- navbar-collapse -->
+    </nav>
+</div><!-- container -->
 <div class="main-container container">
   <div class="row">
     <section<?php print $content_column_class; ?>>
