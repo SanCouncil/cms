@@ -1,17 +1,24 @@
-/**
- * Navigation
- */
 /* CSS used here will be applied after bootstrap.css */
-.nav-container, .navbar {
-  border-style: none;
-  padding: 0px;
-  margin-bottom: 0px;
+/*Red: DB5627 */
+/*Yellow: E4B439 */
+/*Green: 77A240 */
+/*Blue: 087190 */
+/*SGreen: B0B67A*/
+/*SBlue: 425A68 */
+/*SRed: */
+/*SYellow: */
+
+.nav-container {
+  padding:0;
 }
 
 .navbar-nav>li>img {
   width: 200px;
   padding-top: 15px;
 }
+  .navbar .navbar-brand {
+    padding-left: 15px;
+  }
 
 .navbar-nav:not(.navbar-right)>li>a {
   padding-top: 31px;
@@ -19,39 +26,62 @@
 }
 
 .navbar .navbar-nav li>a {
-  color: #FFCDA4;
+  color: #B0B67A;
 }
 
-.navbar .navbar-nav:not(.navbar-right) li>a:hover {
-  color: #FFCDA4;
-  border-bottom: 4px solid #FFCDA4;
+.navbar-default .navbar-nav:not(.navbar-right) li>a:hover {
+  color: #B0B67A;
+  border-bottom: 4px solid #B0B67A;
 }
 
-.navbar .navbar-nav>li.active>a,
-.navbar .navbar-nav>li.active>a:hover,
-.navbar .navbar-nav>li.active-trail>a,
-.navbar .navbar-nav>li.active-trail>a:hover
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover
 {
-  color: #A74C00;
+  color: #E4B439;
   font-weight: bold;
-  border-bottom: 4px solid #A74C00;
-  background: #FF7400;
+  border-bottom: 4px solid #E4B439;
+  background: #DB5627;
 }
 
-.navbar
+.navbar {
+  background: #DB5627;
+  margin-bottom: 0;
+  border:0;
+}
+
+.navbar-default .navbar-nav>.dropdown>a .caret {
+  border-top-color: #B0B67A;
+  border-bottom-color: #B0B67A;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover
 {
-  background: #FF7400; 
+  color: #E4B439;
+
+  border-bottom: 4px solid #E4B439;              
+  background: #DB5627;
+}
+
+.navbar-default .navbar-nav:not(.navbar-right) li ul,
+.navbar-default .navbar-nav:not(.navbar-right) li ul a:focus,
+.navbar-default .navbar-nav:not(.navbar-right) li ul a:hover
+{
+  border-style: none;              
+  background: #DB5627;
 }
 
 
 @media(max-width:767px){
   .navbar-brand {
     padding-top: 5px;
+    padding-left: 5px;
   }
 
   .navbar .navbar-nav:not(.navbar-right)>li>a,
   .navbar .navbar-nav:not(.navbar-right)>li>a:active,
-  .navbar .navbar-nav:not(.navbar-right)>li>a:active-trail,
   .navbar .navbar-nav:not(.navbar-right) li>a:hover,
   .navbar .navbar-right li>a,
   .navbar .navbar-right li>a:hover
@@ -61,6 +91,17 @@
     border-style: none;
     font-size: 1.6em;
   }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a
+  {
+    font-size: 1.3em;
+    color: #FFCDA4;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover
+  {
+    font-size: 1.5em;
+    color: #A74C00;
+  }
+
 
   .navbar li.divider { 
     border-bottom: 1px solid #ffffff;
@@ -135,13 +176,13 @@ body a:hover {
 .main-container {
   background-color: rgba(255, 255, 255, 1.0);
   border: solid;
-  border-width: 1px;
+  border-width: 0px;
   border-radius: 5px;
   padding: 30px;
 }
 
 
-.ctr {
+.page-header {
   text-align: center;
   border: none;
 }
@@ -168,16 +209,11 @@ body a:hover {
   width: 100%;
 }
 
-img.ctr {
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 20px;
-}
-
 .responsive-video {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 60px; overflow: hidden;
+  background-color: black;
 }
 
 .responsive-video iframe,
@@ -263,10 +299,6 @@ img.social-media {
 
   .tweety-feed {
     text-align: left;
-  }
-
-  img.ctr {
-    padding: 30px 0px;
   }
 
   .block_body {

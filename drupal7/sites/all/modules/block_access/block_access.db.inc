@@ -50,27 +50,26 @@ function block_access_add_role($rid, $module, $perm, $delta=NULL) {
  */
 function block_access_get_roles($module, $perm, $delta=NULL) {
   $ret = array();
-  $query = db_select('block_access_roles', 'b')
-    ->fields('b', array('rid'))
-    ->condition('module', $module, '=')
-    ->condition('permission', $perm, '=');
-
   if ($delta) {
-    $query = $query->condition('delta', $delta, '=');
-  }
-
-  $result = $query->execute();
-  foreach ($result as $record) {
-    $ret[] = $record->rid;
-  }
-
-  // If we didn't find any for the delta, use the module defaults
-  if ($delta && empty($ret)) {
-    $delta = NULL;
     $query = db_select('block_access_roles', 'b')
       ->fields('b', array('rid'))
       ->condition('module', $module, '=')
-      ->condition('permission', $perm, '=');
+      ->condition('permission', $perm, '=')
+      ->condition('delta', $delta, '=');
+    $result = $query->execute();
+    foreach ($result as $record) {
+      $ret[] = $record->rid;
+    }
+  }
+
+  // If we didn't find any for the delta, or there is no delta
+  // then use the module defaults
+  if (empty($ret)) {
+    $query = db_select('block_access_roles', 'b')
+      ->fields('b', array('rid'))
+      ->condition('module', $module, '=')
+      ->condition('permission', $perm, '=')
+      ->condition('delta', '', '=');
     $result = $query->execute();
     foreach ($result as $record) {
       $ret[] = $record->rid;

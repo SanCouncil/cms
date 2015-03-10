@@ -74,33 +74,32 @@
  */
 ?>
 <div class="nav-container container">
-    <nav class="navbar navbar-default" id="navbar">
-        <div class="navbar-header">
-            <button class="navbar-toggle collapsed" type="button" data-target="#nav-links" data-toggle="collapse"> <span class="sr-only">Toggle navigation</span>
- <span class="icon-bar"></span>
-
-                <span class="icon-bar"></span> <span class="icon-bar"></span>
-
-            </button> <a title="Home" class="logo navbar-brand" href="#">
-            <img class="img-responsive" alt="SanCouncil" src="http://prod.sanantoniononprofitcouncil.org/sites/default/files/sancouncil_logo_40x40.png">
-          </a>
-
-        </div>
-
-        <div class="navbar-collapse collapse" id="nav-links">
-          <?php if(!empty($primary_nav)): print render($primary_nav); endif;?>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="divider"></li>
-            <li>
-              <img class="img-responsive visible-lg-inline visible-md-inline" alt="San Antonio Skyline" src="http://prod.sanantoniononprofitcouncil.org/sites/default/files/logos/san_skyline.png">
-            </li>
-            <?php if(empty($secondary_nav)): ?>
+  <nav class="navbar navbar-default" id="navbar">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-target="#nav-links" data-toggle="collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a title="Home" class="logo navbar-brand" href="#">
+        <img class="img-responsive" alt="SanCouncil" src="http://prod.sanantoniononprofitcouncil.org/sites/default/files/sancouncil_logo_40x40.png">
+      </a>
+      </div>
+      <div class="navbar-collapse collapse" id="nav-links">
+        <?php if(!empty($primary_nav)): print render($primary_nav); endif;?>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="divider"></li>
+          <li>
+            <img class="img-responsive visible-lg-inline visible-md-inline" alt="San Antonio Skyline" src="http://prod.sanantoniononprofitcouncil.org/sites/default/files/logos/san_skyline.png">
+          </li>
+          <?php if(empty($secondary_nav)): ?>
             <li><a href="<?php print $base_path ?>user">Login</a></li>
-            <?php else: print render($secondary_nav); endif;?>
-          </ul>
-        </div> <!-- navbar-collapse -->
+          <?php else: print render($secondary_nav); endif;?>
+        </ul>
+      </div> <!-- navbar-collapse -->
     </nav>
-</div><!-- container -->
+</div>
 <div class="main-container container">
   <div class="row">
     <section<?php print $content_column_class; ?>>
@@ -133,13 +132,13 @@
     <?php if (!empty($page['bodyA'])): ?>
       <div class="col-md-8 block_body">
     <?php print render($page['bodyA']); ?>
-      <br><br><br></div>  <!-- /#bodyA -->
+      </div>  <!-- /#bodyA -->
     <?php endif; ?>
 
     <?php if (!empty($page['bodyB'])): ?>
       <div class="col-md-4 block_body">
     <?php print render($page['bodyB']); ?>
-      <br><br><br></div>  <!-- /#bodyB -->
+      </div>  <!-- /#bodyB -->
     <?php endif; ?>
 
   </div>
@@ -149,13 +148,13 @@
     <?php if (!empty($page['bodyC'])): ?>
       <div class="col-md-4 block_body">
     <?php print render($page['bodyC']); ?>
-      <br><br><br></div>  <!-- /#bodyC -->
+      </div>  <!-- /#bodyC -->
     <?php endif; ?>
 
     <?php if (!empty($page['bodyD'])): ?>
       <div class="col-md-8 block_body">
     <?php print render($page['bodyD']); ?>
-      <br><br><br></div>  <!-- /#bodyD -->
+      </div>  <!-- /#bodyD -->
     <?php endif; ?>
 
 </div>
@@ -165,19 +164,19 @@
     <?php if (!empty($page['body1'])): ?>
       <div class="col-md-4 block_body">
     <?php print render($page['body1']); ?>
-      <br><br><br></div>  <!-- /#body1 -->
+      </div>  <!-- /#body1 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body2'])): ?>
       <div class="col-md-4 block_body">
     <?php print render($page['body2']); ?>
-      <br><br><br></div>  <!-- /#body2 -->
+      </div>  <!-- /#body2 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body3'])): ?>
       <div class="col-md-4 block_body">
     <?php print render($page['body3']); ?>
-      <br><br><br></div>  <!-- /#body3 -->
+      </div>  <!-- /#body3 -->
     <?php endif; ?>
 
   </div>
@@ -187,19 +186,19 @@
     <?php if (!empty($page['body4'])): ?>
       <div class="col-md-4 block_body">
     <?php print render($page['body4']); ?>
-      <br><br><br></div>  <!-- /#body1 -->
+      </div>  <!-- /#body1 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body5'])): ?>
       <div class="col-md-4 block_body">
     <?php print render($page['body5']); ?>
-      <br><br><br></div>  <!-- /#body2 -->
+      </div>  <!-- /#body2 -->
     <?php endif; ?>
 
     <?php if (!empty($page['body6'])): ?>
       <div class="col-md-4 block_body">
     <?php print render($page['body6']); ?>
-      <br><br><br></div>  <!-- /#body3 -->
+      </div>  <!-- /#body3 -->
     <?php endif; ?>
 
   </div>
