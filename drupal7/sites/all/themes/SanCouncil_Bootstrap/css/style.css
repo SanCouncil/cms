@@ -195,6 +195,10 @@ body a:hover {
   text-align:center;
 }
 
+.block_event {
+  padding-bottom: 10px;
+}
+
 .media_embed {
   height: 0;
   position: relative;
@@ -233,6 +237,15 @@ body a:hover {
 
 .search_form_label {
   text-align: left;
+}
+
+.view .date-nav-wrapper .date-prev {
+  padding-right: 20px;
+  margin-top: 40px;
+}
+
+.view .date-nav-wrapper .date-next {
+  margin-top: 40px;
 }
 
 img.social-media {

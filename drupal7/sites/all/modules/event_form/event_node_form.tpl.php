@@ -2,12 +2,12 @@
   <div class="col-md-6">
     <?php print drupal_render($form['title']); ?>
     <?php print drupal_render($form['field_date']); ?>
-    <?php print drupal_render($form['field_location']); ?>
-    <?php print drupal_render($form['field_info_link']); ?>
-    <?php print drupal_render($form['field_logo']); ?>
   </div>
 
   <div class="col-md-6">
+    <?php print drupal_render($form['field_details']); ?>
+    <?php print drupal_render($form['field_location']); ?>
+    <?php print drupal_render($form['field_info_link']); ?>
     <?php print drupal_render($form['body']); ?>
   </div>
 </div>
