@@ -29,3 +29,4 @@ Hotfix version 0.15.9
 Released version 0.16.9
 Released version 0.16.10
 Released version 0.17.10
+Released version 0.18.10
