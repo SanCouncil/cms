@@ -1,6 +1,164 @@
+/* CSS used here will be applied after bootstrap.css */
+/*Red: DB5627 */
+/*Yellow: E4B439 */
+/*Green: 77A240 */
+/*Blue: 087190 */
+/*SGreen: B0B67A*/
+/*SBlue: 425A68 */
+/*SRed: */
+/*SYellow: */
+
+.nav-container {
+  padding:0;
+}
+
+.navbar-nav>li>img {
+  width: 200px;
+  padding-top: 15px;
+}
+  .navbar .navbar-brand {
+    padding-left: 15px;
+  }
+
+.navbar-nav:not(.navbar-right)>li>a {
+  padding-top: 31px;
+  font-size: 1.6em;
+}
+
+.navbar .navbar-nav li>a {
+  color: #B0B67A;
+}
+
+.navbar-default .navbar-nav:not(.navbar-right) li>a:hover {
+  color: #B0B67A;
+  border-bottom: 4px solid #B0B67A;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover
+{
+  color: #E4B439;
+  font-weight: bold;
+  border-bottom: 4px solid #E4B439;
+  background: #DB5627;
+}
+
+.navbar {
+  background: #DB5627;
+  margin-bottom: 0;
+  border:0;
+}
+
+.navbar-default .navbar-nav>.dropdown>a .caret {
+  border-top-color: #B0B67A;
+  border-bottom-color: #B0B67A;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover
+{
+  color: #E4B439;
+
+  border-bottom: 4px solid #E4B439;              
+  background: #DB5627;
+}
+
+.navbar-default .navbar-nav:not(.navbar-right) li ul,
+.navbar-default .navbar-nav:not(.navbar-right) li ul a:focus,
+.navbar-default .navbar-nav:not(.navbar-right) li ul a:hover
+{
+  border-style: none;              
+  background: #DB5627;
+}
+
+
+@media(max-width:767px){
+  .navbar-brand {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  .navbar .navbar-nav:not(.navbar-right)>li>a,
+  .navbar .navbar-nav:not(.navbar-right)>li>a:active,
+  .navbar .navbar-nav:not(.navbar-right) li>a:hover,
+  .navbar .navbar-right li>a,
+  .navbar .navbar-right li>a:hover
+  {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: none;
+    font-size: 1.6em;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a
+  {
+    font-size: 1.3em;
+    color: #FFCDA4;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover
+  {
+    font-size: 1.5em;
+    color: #A74C00;
+  }
+
+
+  .navbar li.divider { 
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 5px;
+  }
+}
+
+
+/**
+ *  *
+ *  Original
+ *  color:
+ *  #E79A2B
+ *   *
+ *   -May
+ *   consider
+ *   using
+ *   this
+ *   one
+ *   as
+ *   the
+ *   primary...
+ *    */
+
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=70u0u0kwi++bu++hX++++rd++kX */
+
+.color-primary-0 { color: #FF7400 } /* Main Primary color */
+.color-primary-1 { color: #FFCDA4 }
+.color-primary-2 { color: #FFB170 }
+.color-primary-3 { color: #D96200 }
+.color-primary-4 { color: #A74C00 }
+.color-header-text {color: #231F20 }
+
+.color-secondary-1-0 { color: #FFAA00 } /* Main Secondary color (1) */
+.color-secondary-1-1 { color: #FFE1A4 }
+.color-secondary-1-2 { color: #FFCF70 }
+.color-secondary-1-3 { color: #D99100 }
+.color-secondary-1-4 { color: #A76F00 }
+
+.color-secondary-2-0 { color: #1A60FF } /* Main Secondary color (2) */
+.color-secondary-2-1 { color: #ADC6FF }
+.color-secondary-2-2 { color: #7FA6FF }
+.color-secondary-2-3 { color: #002C91 }
+.color-secondary-2-4 { color: #002270 }
+
+.color-complement-0 { color: #00FFFF }  /* Main Complement color */
+.color-complement-1 { color: #A4FFFF }
+.color-complement-2 { color: #70FFFF }
+.color-complement-3 { color: #008282 }
+.color-complement-4 { color: #006464 }
+
+
 /**
  * Customized stylesheet for SANCOUNCIL Drupal Bootstrap Theme
-*/
+ */
 
 body {
   background-color: rgba(0, 0, 0, 0.45);
@@ -18,46 +176,48 @@ body a:hover {
 .main-container {
   background-color: rgba(255, 255, 255, 1.0);
   border: solid;
-  border-width: 1px;
+  border-width: 0px;
   border-radius: 5px;
   padding: 30px;
 }
 
-.navbar {
-  margin-bottom: 0;
-  border: solid;
-  border-width: 1px;
-  background-color: rgb(244, 163, 46);
-  border-radius: 5px;
-  font-size: 18px;
-}
 
-.navbar.container {
-  margin-top: 0px;
-}
-
-.navbar-default .navbar-brand {
-  color: #000000;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: #000000;
-}
-
-.skyline {
-  max-height: 100px;
-  padding-top: 20px;
-}
-
-.ctr {
+.page-header {
   text-align: center;
   border: none;
+}
+
+.block_body {
+  padding-bottom: 50px;
+}
+
+.block-title {
+  text-align:center;
+}
+
+.block_event {
+  padding-bottom: 10px;
+}
+
+.media_embed {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.media_embed iframe {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .responsive-video {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 60px; overflow: hidden;
+  background-color: black;
 }
 
 .responsive-video iframe,
@@ -77,6 +237,15 @@ body a:hover {
 
 .search_form_label {
   text-align: left;
+}
+
+.view .date-nav-wrapper .date-prev {
+  padding-right: 20px;
+  margin-top: 40px;
+}
+
+.view .date-nav-wrapper .date-next {
+  margin-top: 40px;
 }
 
 img.social-media {
@@ -125,42 +294,27 @@ img.social-media {
   margin-top: 20px;
 }
 
-@media (min-width: 768px) {
-  
-  .navbar.container {
-    max-width: 750px;
-  }
-
-}
-
 @media (min-width: 992px) {
-  
-  .navbar.container {
-    max-width: 970px;
-  }
-  
+
   .org {
     text-align: left;
   }
-  
+
   .search_form {
     padding-right: 15px;
     padding-left: 15px;
   }
-  
+
   .tweety {
     text-align: right;
     padding: 5px 0px 0px 0px;
   }
-  
+
   .tweety-feed {
     text-align: left;
   }
-}
 
-@media (min-width: 1200px) {
-  .navbar.container {
-    max-width: 1170px;
+  .block_body {
+    padding-bottom: 100px;
   }
 }
-

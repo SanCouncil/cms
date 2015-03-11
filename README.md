@@ -18,3 +18,15 @@ Released version 0.8.6
 Released version 0.9.6
 Released version 0.10.6
 Released version 0.11.6
+Released version 0.12.6
+Released version 0.13.6
+Hotfix version 0.13.7
+Released version 0.14.7
+Released version 0.14.7
+Released version 0.15.7
+Hotfix version 0.15.8
+Hotfix version 0.15.9
+Released version 0.16.9
+Released version 0.16.10
+Released version 0.17.10
+Released version 0.18.10

@@ -83,4 +83,9 @@
       </div>
     <?php endif; ?>
   </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <img class="img-responsive ctr" src="<?php print base_path() ?>sites/default/files/logos/texas_small.png" alt="Texas">
+    </div>
+  </div>
 </div>

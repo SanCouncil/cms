@@ -1,7 +1,7 @@
 name = organization
 core = 7.x
 package = Features
-version = 7.x-0.4
+version = 7.x-0.6
 project = organization
 dependencies[] = ctools
 dependencies[] = editableviews
